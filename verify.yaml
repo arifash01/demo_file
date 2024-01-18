@@ -1,0 +1,14 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: goodbye
+spec:
+  params:
+  - name: username
+    type: string
+  steps:
+    - name: goodbye
+      image: gcr.io/distroless/base-debian12:debug-nonroot@sha256:a302a1643a267feb5e04b2584255402faa5b8c192a6087408605e83d64e82e20cd 
+        #!/bin/bash
+        echo "Goodbye $(params.username)!"
+        echo "Final test123"  
