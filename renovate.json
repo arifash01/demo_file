@@ -3,9 +3,8 @@
     "fileMatch": ["\\.yaml$", "\\.yml$"]
   },
   "prHeader":"Update Dependency",
-  "prNotPendingHours":1,
   "assignees":[
-    "arifash01"
+    "gcb-catalog-bot"
   ],
   "labels":["dependencies-updates"]
 }
